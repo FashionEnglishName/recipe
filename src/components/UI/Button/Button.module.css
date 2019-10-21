@@ -1,0 +1,114 @@
+.Button, .ButtonSmall, .ButtonSmall:link, .ButtonSmall:visited  {
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    border-radius: 10rem;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s; 
+}
+
+.Button, .ButtonSmall {
+    transform: scale(1.05);
+}
+
+.Button:focus, .ButtonSmall:focus {
+    outline: none; 
+}
+
+.Button > *:first-child, .ButtonSmall > *:first-child {
+    margin-right: 1rem;
+}
+
+.Button {
+    padding: 1.3rem 3rem;
+    font-size: 1.4rem; 
+}
+
+.Button svg {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: currentColor; 
+}
+
+.ButtonSmall, .ButtonSmall:link, .ButtonSmall:visited {
+    font-size: 1.3rem;
+    padding: 1rem 1.75rem;
+    text-decoration: none; 
+}
+
+.ButtonSmall svg, .ButtonSmall:link svg, .ButtonSmall:visited svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: currentColor; 
+}
+
+.ButtonInline {
+    color: #F59A83;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #F9F5F3;
+    padding: .8rem 1.2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s; 
+}
+
+.ButtonInline svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: currentColor;
+    margin: 0 .2rem; 
+}
+
+.ButtonInline span {
+    margin: 0 .4rem; 
+}
+
+.ButtonInline:hover {
+    color: #F48982;
+    background-color: #F2EFEE; 
+}
+
+.ButtonInline:focus {
+    outline: none; 
+}
+
+
+.ButtonTiny {
+    height: 1.75rem;
+    width: 1.75rem;
+    border: none;
+    background: none;
+    cursor: pointer; 
+}
+
+.ButtonTiny svg {
+    height: 100%;
+    width: 100%;
+    fill: #F59A83;
+    transition: all .3s; 
+}
+
+.ButtonTiny:focus {
+    outline: none; 
+}
+
+.ButtonTiny:hover svg {
+    fill: #F48982;
+    transform: translateY(-1px); 
+}
+
+.ButtonTiny:active svg {
+    fill: #F48982;
+    transform: translateY(0); 
+}
+
+.ButtonTiny:not(:last-child) {
+    margin-right: .3rem; 
+}
+  
