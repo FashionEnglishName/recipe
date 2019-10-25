@@ -27,7 +27,11 @@ class Like extends React.Component {
                 >
                     <LikeIcon />
                 </LikeField>
-                <LikePanel show={this.state.shouldPanelShow}></LikePanel>
+                <LikePanel 
+                    show={this.state.shouldPanelShow}
+                    enter={() => this.mouseEnterHandler()}
+                    leave={() => this.mouseLeaveHandler()}
+                ></LikePanel>
             </div>
         )
     }

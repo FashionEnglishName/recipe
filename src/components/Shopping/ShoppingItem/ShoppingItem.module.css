@@ -1,0 +1,44 @@
+.ShoppingItem {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.3rem 0;
+    border-bottom: 1px solid #F2EFEE;
+    position: relative;
+}
+
+.ShoppingCount {
+    flex: 0 0 7.5rem;
+    padding: .4rem .5rem;
+    border: 1px solid #F2EFEE;
+    border-radius: 3px;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ShoppingCount input {
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    width: 7.5rem;
+    border-radius: 3px;
+}
+
+.ShoppingCount input:focus {
+    outline: none;
+    background-color: #F2EFEE;
+}
+
+.ShoppingCount p {
+    font-size: 1.2rem;
+}
+
+.ShoppingDescription {
+    flex: 1;
+    font-size: 1.3rem;
+    margin-top: .4rem;
+    margin-right: 1.5rem;
+}

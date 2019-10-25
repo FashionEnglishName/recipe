@@ -1,0 +1,67 @@
+.ResultLink {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    transition: all .3s;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ResultLink:hover {
+    background-color: #F9F5F3;
+    transform: translateY(-2px);
+}
+
+.Active {
+    background-color: #F9F5F3;
+}
+
+.ResultFigure {
+    flex: 0 0 5.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 5.5rem;
+    margin-right: 2rem;
+    position: relative;
+
+}
+
+.ResultFigure::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    opacity: .4;
+}
+
+.ResultFigure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.ResultName {
+    font-size: 1.3rem;
+    color: #F59A83;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .3rem;
+}
+
+.ResultAuthor {
+    font-size: 1.1rem;
+    color: #968B87;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ResultName, .ResultAuthor {
+    text-transform: capitalize;
+}

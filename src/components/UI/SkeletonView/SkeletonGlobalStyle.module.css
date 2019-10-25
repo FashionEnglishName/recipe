@@ -1,0 +1,14 @@
+.SkeletonObject {
+    animation: flash .5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flash {
+    from {
+        background-color: #eeeeee;
+    }
+
+    to {
+        background-color: #f1f1f1;
+    }
+}

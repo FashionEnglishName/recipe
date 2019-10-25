@@ -12,6 +12,15 @@
   transition: all .5s .2s; 
 }
 
+.LikeAuthor:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.LikeList {
+  list-style: none;
+}
+
 .Show {
   visibility: visible;
   opacity: 1; 

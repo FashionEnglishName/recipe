@@ -1,0 +1,16 @@
+.ResultLink {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-right: 1px solid #fff;
+}
+
+.ResultFigure {
+    flex: 0 0 5.5rem;
+    height: 5.5rem;
+    margin-right: 2rem;
+}
+
+.ResultName {
+    margin-bottom: .5rem;
+}
