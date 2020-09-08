@@ -53,6 +53,8 @@ export const remove = id => {
  */
 export const contains = id => {
     const lovedLine = localStorage.getItem('loved');
+    console.log("love list", id);
+    console.log("love list", lovedLine.indexOf(id));
     if(!lovedLine) return false;
     return lovedLine.split(',').includes(id);
 }

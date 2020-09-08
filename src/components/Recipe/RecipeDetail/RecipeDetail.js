@@ -8,7 +8,13 @@ import { connect } from 'react-redux';
 
 class RecipeDetail extends React.Component {
     state = {
-        recipeString: `${this.props.recipe.uri}@@${this.props.recipe.label}@@${this.props.recipe.source}@@${this.props.recipe.image}`
+        recipeString: `${this.props.recipeString}`
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            recipeString: nextProps.recipeString
+        })
     }
 
     loveButtonClickHandler = () => {

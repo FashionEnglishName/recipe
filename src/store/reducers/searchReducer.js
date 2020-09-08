@@ -5,8 +5,11 @@ const initialState = {
 }
 
 export const searchReducer = (state = initialState, action) => {
+    console.log("enter serach reducer");
+    console.log("search action: ", action.type);
     switch (action.type) {
         case SearchActionTypes.SEARCH_SUCCESS:
+            console.log("search reducer: " , action);
             return {
                 ...state,
                 recipeList: action.recipeList,
@@ -16,6 +19,7 @@ export const searchReducer = (state = initialState, action) => {
                 keywords: action.keywords
             }
         case SearchActionTypes.SEARCH_ERROR:
+            console.log("error", action.err);
             return {
                 ...state,
                 err: action.err

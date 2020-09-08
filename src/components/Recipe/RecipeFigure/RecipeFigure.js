@@ -11,7 +11,7 @@ class RecipeFigure extends React.Component {
                     <span>{this.props.title}</span>
                 </h1>
             </figure>
-        )   
+        )
     }
 }
 

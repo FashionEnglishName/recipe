@@ -45,7 +45,7 @@ export const search = (keywords) => {
         dispatch(search_start());
         request("https://api.edamam.com/search", query).then(res => {
             dispatch(search_end());
-            dispatch(search_success(res.hits, res.from, res.to, res.count, res.params.q));
+            dispatch(search_success(res.hits, res.from, res.to, res.count, res.q));
         }).catch(err => {
             dispatch(search_end());
             dispatch(search_error(err));
@@ -59,7 +59,7 @@ export const paginate = (from, keywords) => {
         dispatch(search_start());
         request("https://api.edamam.com/search", query).then(res => {
             dispatch(search_end());
-            dispatch(search_success(res.hits, res.from, res.to, res.count, res.params.q));
+            dispatch(search_success(res.hits, res.from, res.to, res.count, res.q));
         }).catch(err => {
             dispatch(search_end());
             dispatch(search_error(err));

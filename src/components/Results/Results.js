@@ -13,6 +13,7 @@ class Results extends React.Component {
 
     render () {
         let result, loading;
+        console.log("Results", this.props.recipeList)
         if(Object.keys(this.props.recipeList).length === 0) {
             result = null;
         } else {

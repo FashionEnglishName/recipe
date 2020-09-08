@@ -17,7 +17,7 @@ class Recipe extends React.Component {
                     Object.keys(this.props.recipe).length === 0 ? null : (
                         <>
                             <RecipeFigure image={this.props.recipe.image} title={this.props.recipe.label}></RecipeFigure>
-                            <RecipeDetail></RecipeDetail>
+                            <RecipeDetail recipeString={`${this.props.recipe.uri}@@${this.props.recipe.label}@@${this.props.recipe.source}@@${this.props.recipe.image}`}></RecipeDetail>
                             <RecipeIngredients ingredients={this.props.recipe.ingredientLines} ingredientsWithWeight={this.props.recipe.ingredients}></RecipeIngredients>
                             <RecipeDirection link={this.props.recipe.url} author={this.props.recipe.source}></RecipeDirection>
                         </>
